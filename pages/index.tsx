@@ -2,27 +2,8 @@ import { useTranslation } from 'react-i18next';
 
 import Head from 'next/head'
 import Link from 'next/link'
-import { GetStaticProps, GetStaticPaths, GetServerSideProps } from 'next'
 import {
   Box,
-  BoxProps,
-  Button,
-  Center,
-  chakra,
-  Circle,
-  Divider,
-  Flex,
-  Grid,
-  Heading,
-  Icon,
-  Img,
-  LightMode,
-  SimpleGrid,
-  Stack,
-  Text,
-  useColorModeValue,
-  Wrap,
-  WrapItem,
 } from '@chakra-ui/react';
 
 import SEO from '../components/seo';
@@ -40,8 +21,8 @@ export default function Home({ allPostsData }) {
         <link rel="shortcut icon" href="/favicon.svg" type="image/svg+xml"/>
       </Head>
       <SEO
-        title={t('homepage.seo.title')}
-        description={t('homepage.seo.description')}
+        title='evovling cash'
+        description='evolving protocol: Decentralized Stablecoin With Algorithmic Reserve Currency'
       />
       <Header />
 
