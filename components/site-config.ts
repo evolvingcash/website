@@ -1,18 +1,18 @@
-const baseUrl = "https://github.com/chakra-ui/chakra-ui"
+const baseUrl = "https://github.com/evolvingcash"
 
 const siteConfig = {
-  copyright: `Copyright © ${new Date().getFullYear()} Segun Adebayo. All Rights Reserved.`,
+  copyright: `Copyright © ${new Date().getFullYear()} evolving-protocol core team. All Rights Reserved.`,
   algolia: {
     apiKey: "df1dcc41f7b8e5d68e73dd56d1e19701",
-    indexName: "chakra-ui",
+    indexName: "evolving.cash",
     inputSelector: "#algolia-search",
   },
   author: {
-    name: "Segun Adebayo",
-    github: "https://github.com/segunadebayo",
-    twitter: "https://twitter.com/thesegunadebayo",
-    linkedin: "https://linkedin.com/in/thesegunadebayo",
-    email: "sage@adebayosegun.com",
+    name: "evolving-protocol core team",
+    github: "https://github.com/evolvingcash",
+    twitter: "https://twitter.com/Evolving_cash",
+    linkedin: "",
+    email: "evolving.cash@gmail.com",
   },
   repo: {
     url: baseUrl,
@@ -20,46 +20,45 @@ const siteConfig = {
     blobUrl: `${baseUrl}/blob/main`,
   },
   openCollective: {
-    url: "https://opencollective.com/chakra-ui",
+    url: "https://opencollective.com/evolving.cash",
   },
   discord: {
-    url: "https://discord.gg/chakra-ui",
+    url: "https://discord.gg/evolving.cash",
   },
-  youtube: "https://www.youtube.com/channel/UC4TmDovH46TB4S0SM0Y4CIg",
   seo: {
-    title: "Chakra UI",
-    titleTemplate: "%s - Chakra UI",
+    title: "evolving cash",
+    titleTemplate: "%s - evolving cash",
     description:
-      "Simple, Modular and Accessible UI Components for your React Applications.",
-    siteUrl: "https://chakra-ui.com",
+      "evolving protocol: Decentralized Stablecoin With Algorithmic Reserve Currency.",
+    siteUrl: "https://www.evolving.cash",
     twitter: {
-      handle: "@chakra-ui",
-      site: "@chakra-ui",
-      cardType: "summary_large_image",
+      handle: "@Evolving_cash",
+      site: "@Evolving_cash",
+      cardType: "Evolving_cash",
     },
     openGraph: {
       type: "website",
       locale: "en_US",
-      url: "https://chakra-ui.com",
-      title: "Chakra UI",
+      url: "https://www.evolving.cash",
+      title: "evolving cash",
       description:
-        "Simple, Modular and Accessible UI Components for your React Applications.",
+        "evolving protocol: Decentralized Stablecoin With Algorithmic Reserve Currency.",
       site_name:
-        "Chakra UI: Simple, Modular and Accessible UI Components for your React Applications.",
+        "evolving protocol: Decentralized Stablecoin With Algorithmic Reserve Currency.",
       images: [
         {
-          url: "https://chakra-ui.com/og-image.png",
+          url: "https://www.evolving.cash/og-image.png",
           width: 1240,
           height: 480,
           alt:
-            "Chakra UI: Simple, Modular and Accessible UI Components for your React Applications.",
+            "evolving protocol: Decentralized Stablecoin With Algorithmic Reserve Currency.",
         },
         {
-          url: "https://chakra-ui.com/twitter-og-image.png",
+          url: "https://www.evolving.cash/twitter-og-image.png",
           width: 1012,
           height: 506,
           alt:
-            "Chakra UI: Simple, Modular and Accessible UI Components for your React Applications.",
+            "evolving protocol: Decentralized Stablecoin With Algorithmic Reserve Currency.",
         },
       ],
     },

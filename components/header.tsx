@@ -54,15 +54,13 @@ import {
     }, [mobileNav.isOpen]);
   
     return (
-      <>
+      <Box as="nav" padding="5px 0">
         <Flex w='100%' h='100%' px='6' align='center' justify='space-between'>
           <Flex align='center'>
             <NextLink href='/' passHref>
-              <chakra.a display='block' aria-label='Chakra UI, Back to homepage'>
-                <Logo display={{ base: 'none', md: 'block' }} />
-                <Box minW='3rem' display={{ base: 'block', md: 'none' }}>
-                  <LogoIcon />
-                </Box>
+              <chakra.a display='flex' justifyItems="center" alignItems="center" aria-label='evolving.cash, Back to homepage'>
+                <Logo width="48px" height="48px" />
+                <Box display="inline-block" color="08090a" fontFamily="mono" fontWeight="600">Evolving</Box>
               </chakra.a>
             </NextLink>
           </Flex>
@@ -71,32 +69,33 @@ import {
             justify='flex-end'
             w='100%'
             align='center'
-            color='gray.400'
+            color='#3E4951'
             maxW='1100px'
+            fontFamily="'Red Hat Display',sans-serif"
+            fontWeight="600"
           >
-
             <HStack spacing={0} mr={2} display={{ base: 'none', md: 'flex' }}>
               <LanguageSwitcher />
             </HStack>
-            <HStack spacing='5' display={{ base: 'none', md: 'flex' }}>
+            <HStack spacing='5' display={{ base: 'none', md: 'flex' }} >
               <Link
                 isExternal
-                aria-label='Go to Chakra UI GitHub page'
-                href={siteConfig.repo.url}
+                aria-label='evolving-docs'
+                href='#'
               >Docs
               </Link>
-              <Link aria-label='Go to Chakra UI Discord page' href='/discord'>
-                Blog
+              <Link aria-label='Go to community page' href='#'>
+                Community
               </Link>
               <Link
                 isExternal
-                aria-label='Go to Chakra UI YouTube channel'
-                href={siteConfig.youtube}
+                aria-label='Go to Govern DAO'
+                href='#'
               >
-                Govern
+                DAO
               </Link>
             </HStack>
-            <Button marginLeft="1rem">Enter App</Button>
+            <Button marginLeft="2rem" colorScheme="purple">Lauch App</Button>
             <IconButton
               size='md'
               fontSize='lg'
@@ -115,12 +114,12 @@ import {
           </Flex>
         </Flex>
         <MobileNavContent isOpen={mobileNav.isOpen} onClose={mobileNav.onClose} />
-      </>
+      </Box>
     );
   }
 
 function Header(props: HTMLChakraProps<'header'>) {
-    const bg = useColorModeValue('white', 'gray.800');
+    const bg = 'transparent' // useColorModeValue('white', 'gray.800');
     const ref = React.useRef<HTMLHeadingElement>();
     const [y, setY] = React.useState(0);
     const { height = 0 } = ref.current?.getBoundingClientRect() ?? {};
@@ -135,7 +134,7 @@ function Header(props: HTMLChakraProps<'header'>) {
         ref={ref}
         shadow={y > height ? 'sm' : undefined}
         transition='box-shadow 0.2s, background-color 0.2s'
-        pos='sticky'
+        pos='fixed'
         top='0'
         zIndex='3'
         bg={bg}
@@ -144,7 +143,7 @@ function Header(props: HTMLChakraProps<'header'>) {
         width='full'
         {...props}
         >
-        <chakra.div height='4.5rem' mx='auto' maxW='1100px'>
+        <chakra.div height='56px' mx='auto' maxW='1100px'>
             <HeaderContent />
         </chakra.div>
         </chakra.header>

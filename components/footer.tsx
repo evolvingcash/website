@@ -14,7 +14,7 @@ import {
 import { IoLogoTwitter, IoLogoLinkedin } from 'react-icons/io';
 import { FaYoutube } from 'react-icons/fa';
 import { MdEmail } from 'react-icons/md';
-import { DiGithubBadge } from 'react-icons/di';
+import { DiGithubBadge, DiDoctrine } from 'react-icons/di';
 // import LanguageSwitcher from './language-switcher';
 
 type FooterLinkProps = {
@@ -29,33 +29,6 @@ const FooterLink: React.FC<FooterLinkProps> = ({ icon, href, label }) => (
   </Link>
 );
 
-const links = [
-  {
-    icon: DiGithubBadge,
-    label: 'GitHub',
-    href: 'https://github.com/segunadebayo',
-  },
-  {
-    icon: IoLogoTwitter,
-    label: 'Twitter',
-    href: 'https://twitter.com/thesegunadebayo',
-  },
-  {
-    icon: IoLogoLinkedin,
-    label: 'LinkedIn',
-    href: 'https://linkedin.com/in/thesegunadebayo/',
-  },
-  {
-    icon: MdEmail,
-    label: 'Email',
-    href: 'mailto:sage@adebayosegun.com',
-  },
-  {
-    icon: FaYoutube,
-    label: 'YouTube',
-    href: 'https://www.youtube.com/channel/UC4TmDovH46TB4S0SM0Y4CIg',
-  },
-];
 
 export const Footer = () => (
     // <Container w="100vw" bgColor="#f3f3f3" centerContent paddingTop="6rem" paddingBottom="6rem" > 
@@ -64,33 +37,33 @@ export const Footer = () => (
   <HStack maxW="1100px" padding="3rem; 0.5rem" margin="auto" >
     <Stack mt={4} direction='column' spacing='12px' justify='center' w='25%'>
         <Box>
-            <FooterLink href="" icon={IoLogoTwitter} />
-            <FooterLink href="" icon={MdEmail} />
-            <FooterLink href="" icon={FaYoutube} />
+            <FooterLink href="https://twitter.com/Evolving_cash" icon={IoLogoTwitter} />
+            <FooterLink href="mailto:evolving.cash@gmail.com" icon={MdEmail} />
+            <FooterLink href="#" icon={FaYoutube} />
         </Box>
 
         <Box marginTop="20px">
-            <FooterLink href="" icon={DiGithubBadge} />
-            <FooterLink href="" icon={DiGithubBadge} />
+            <FooterLink href="https://github.com/evolvingcash" icon={DiGithubBadge} />
+            <FooterLink href="#" icon={DiDoctrine} />
         </Box>
     </Stack>
 
     <Stack mt={4} direction='column' spacing='12px' align="start" w='25%'>
       <Heading fontSize="1.5rem">Products</Heading>
-      <Link display='inline-block' href="" isExternal>Mint</Link>
-      <Link display='inline-block' href="" isExternal>Stake</Link>
+      <Link display='inline-block' href="#" isExternal>Mint</Link>
+      <Link display='inline-block' href="#" isExternal>Stake</Link>
     </Stack>
 
     <Stack mt={4} direction='column' spacing='12px' justify='center' w='25%'>
       <Heading fontSize="1.5rem">Learn</Heading>
-      <Link display='inline-block' href="" isExternal>FAQ</Link>
-      <Link display='inline-block' href="" isExternal>Medium</Link>
+      <Link display='inline-block' href="#" isExternal>FAQ</Link>
+      <Link display='inline-block' href="https://medium.com/@Evolving_cash " isExternal>Medium</Link>
     </Stack>
 
     <Stack mt={4} direction='column' spacing='12px' justify='center' w='25%'>
       <Heading fontSize="1.5rem">Community</Heading>
-      <Link display='inline-block' href="" isExternal>Telegram</Link>
-      <Link display='inline-block' href="" isExternal>Discord</Link>
+      <Link display='inline-block' href="https://t.me/EvolvingCN" isExternal>Telegram</Link>
+      <Link display='inline-block' href="evolving.cash" isExternal>Discord</Link>
     </Stack>
   </HStack>
   </Box>

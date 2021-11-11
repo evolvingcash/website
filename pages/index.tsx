@@ -36,6 +36,9 @@ export default function Home({ allPostsData }) {
 
   return (
     <>
+      <Head>
+        <link rel="shortcut icon" href="/favicon.svg" type="image/svg+xml"/>
+      </Head>
       <SEO
         title={t('homepage.seo.title')}
         description={t('homepage.seo.description')}
