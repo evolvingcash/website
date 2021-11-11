@@ -20,7 +20,7 @@ import {
   import { AiOutlineMenu } from 'react-icons/ai';
   import { RemoveScroll } from 'react-remove-scroll';
   import Logo from './logo';
-  import { SidebarContent } from './sidebar/sidebar';
+  // import { SidebarContent } from './sidebar/sidebar';
 //   import SponsorButton from './sponsor-button';
   
   function NavLink({ href, children }) {
@@ -132,10 +132,10 @@ import {
                     setShadow(scrolled ? 'md' : undefined);
                   }}
                 >
-                  <SidebarContent
-                    pathname={pathname}
-                    // routes={getRoutes(pathname)}
-                  />
+                   {/* <SidebarContent 
+                     pathname={pathname}
+                     routes={getRoutes(pathname)}
+                   /> */}
                 </ScrollView>
               </Flex>
             </motion.div>
